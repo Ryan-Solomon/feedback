@@ -13,6 +13,7 @@ export default function Home() {
 
       <div>{auth?.user.email}</div>
       <button onClick={(e) => auth.signinWithGitHub()}>Sign In</button>
+      {auth?.user && <button onClick={(e) => auth.signout()}>Sign Out</button>}
 
       <footer className={styles.footer}>
         <a
