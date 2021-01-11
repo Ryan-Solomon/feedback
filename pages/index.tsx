@@ -11,7 +11,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div>{auth?.user.email}</div>
+      <div>{auth?.user?.email}</div>
       <button onClick={(e) => auth.signinWithGitHub()}>Sign In</button>
       {auth?.user && <button onClick={(e) => auth.signout()}>Sign Out</button>}
 
